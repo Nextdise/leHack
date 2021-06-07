@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F*cking H@cker!</title>
+    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id = "header">
+
+        <div class="flex-container2">
+            <div class = "titre1">
+                <h1>F*cking H@cker! </h1>
+
+            </div>
+
+            <div class="Head-Flex">
+            <a class="neon-button" href="/login.html">
+                <span><strong>Login</strong> </span >
+        
+             </a>
+             <a class="neon-button" href="Templates/register.html">
+                <span><strong>Register</strong> </span>
+            </a>
+
+  
+            </div> 
+        </div>
+    </div>
+
+
+    <div id = "mid">
+        <div class = "title">
+            <h1>F*cking <br>H@cker!</h1>
+        </div>
+        <div class = "image">
+
+        </div>
+    </div>
+
+
+    <div class ="midEnd">
+        <div class = "btsEnd">
+            <a class = "neon-button" href="New">
+                <samp><strong>New</strong></samp>
+            </a>
+            <a class = "neon-button" href="Débat">
+                <samp><strong>Débat</strong></samp>
+            </a>
+            <a class = "neon-button" href="Questions">
+                <samp><strong>Questions</strong></samp>
+            </a>
+            <a class = "neon-button" href="Evenement">
+                <samp><strong>Evenement</strong></samp>
+            </a>
+        </div>
+    </div>
+
+    <div class =" midEnd2">
+        <div class= "searchEnd">
+        <form class="content">
+            <input type="text" placeholder="Search">
+        
+            <a class = "neon-button" type="reset" class="search">
+                <span><strong>Search</strong></span>
+            </a>
+       
+        </form>
+        </div>
+
+    </div>
+
+
+    <div class = "end">
+        <div class="title2">
+            <h2>Topic du moment !</h2>
+        </div>
+        <div class="flex-container">
+           
+           
+            <div class="card">
+                <h3><u>Titre</u></h3>
+                <div class="flex-container">
+
+                    <div>
+                        <p><a href="imagee"></a><img src="{{.Image}}"
+                                alt="Avatar" style="width:10"></p>
+                    </div>
+                    <div class="container">
+
+                        <h4><b>membre :<br>
+                            {{.Members}}</b></h4>
+                                <p>creationDate : {{.Creationdate}}</p>
+                        <p>Firstalbum: {{.Firstalbum}}</p>
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>

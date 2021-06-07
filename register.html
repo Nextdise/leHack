@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F*cking H@cker!</title>
+    <link rel="stylesheet" href="styleRegister.css">
+    <link rel = "shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a1/Lazy_Hackers_logo.png">
+</head>
+<body>
+    <div>
+        <a class="neon-button" href="/">
+            <p><strong>Retour a l'accueil</strong> </p>
+        </a>
+    </div>
+    
+    <div class="flex-container">
+           
+        <div class="card">
+            <h1> <strong>  Register  </strong> </h1>
+
+            <div class="flex-container">
+
+                <div class="container">
+                    <div class = "formulaire">
+                        <form action="/register" method="POST">
+                            <label>ID: </label>
+                            <input type="text" id="username" name="username" required>
+                    
+                            <label>Email: </label>
+                            <input type="text" id="email" name="email" required>
+                    
+                            <label>Password: </label>
+                            <input type="text" id="pwd" name="pwd" required>
+                    
+                            <button type="submit">Create</button>
+                        </form>
+                    
+                        <!-- <p>{{ .Message }}</p> -->
+                    
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <a class="neon-button" href="login.html">
+                    <h3><strong>Déjà inscrit?</strong> </h3>
+                </a>
+            </div>
+            
+        </div>
+
+    </div>
+    
+    
+</body>
