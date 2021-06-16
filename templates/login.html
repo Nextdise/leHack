@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styleLogin.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/css/styleLogin.css">
     <link rel = "shortcut icon" href="unnamed.png">
+    <link rel = "shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a1/Lazy_Hackers_logo.png">
+
 </head>
 <body>
     
-    <a class="neon-button" href="Templates/index.html">
+    <a class="neon-button" href= "/">
         <p><strong>Retour a l'accueil</strong> </p>
     </a>
 
@@ -23,24 +25,23 @@
 
                 <div class="container">
                     <div class = "formulaire">
-                        <form action="/action.php" method="post">
-                        <input type="name" placeholder="Adresse mail">
+                        <form action="" method="post">
+                        <input name="email" type="name" placeholder="Adresse mail">
 
-                        <input type="password" placeholder="Mot de passe">
+                        <input name ="pwd" type="password" placeholder="Mot de passe">
                         <input type="submit" value="Login"></form>
-                        
+                        <p>{{ .Message }}</p>
 
                     </div>
                 </div>
 
 
-
-
+               
             </div>
-            <a class="neon-button" href="Register.html">
+            <a class="neon-button" href="/register">
                 <h3><strong>Inscription</strong> </h3>
             </a>
-            <a class="neon-button" href="inscription.html">
+            <a class="neon-button" href="/login">
                 <h3><strong>Mots de passe oublier ?</strong> </h3>
             </a>
         </div>

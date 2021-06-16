@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styleTopic.css">
+    <title>L@zy H@cker!</title>
+</head>
+<body>
+    <div class = title>
+        <h1> Crée votre topic</h1>
+    </div>
+    <form action="/Sujet" method="POST">
+
+
+        <div class = NomContenueMid>
+            <label>Nom de votre topic :</label> <br>
+       </div>
+       <div class = "NomContenue">
+           <input name="NomContenue" id ="NomContenue" type="text"  placeholder="Nom de votre topic"> <br>
+        </div>
+        <div class = "mid">
+
+        </div>
+     
+    
+        <div class = "contenuemid">
+            <label>Contenue: </label> <br>
+        </div>
+        <div class = "Contenue">
+            <textarea name="Contenue" id="Contenue" cols="70" rows="10" style="margin: 0px; width: 726px; height: 327px;"></textarea>
+        </div> 
+
+        
+        <button class = neon-button type ="submit">Create</button>
+            
+       
+
+        <p>{{ .Message }}</p>
+    </form> 
+    
+</body>
+</html>

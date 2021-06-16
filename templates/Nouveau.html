@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveauté</title>
+    <link rel="stylesheet" href="/static/css/styleNew.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel = "shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a1/Lazy_Hackers_logo.png">
+</head>
+<body>
+    <div id = "header">
+        <div class = "btsEnd">
+            <a class = "neon-button" href="/">
+                <samp><strong>Accueil</strong></samp>
+            </a>
+            <a class = "neon-button" href="/Debat">
+                <samp><strong>Débat</strong></samp>
+            </a>
+            <a class = "neon-button" href="Questions">
+                <samp><strong>Questions</strong></samp>
+            </a>
+            <a class = "neon-button" href="Evenement">
+                <samp><strong>Evenement</strong></samp>
+            </a>
+        </div>
+
+
+    </div>
+    <div class = "mid">
+        <div class = "title">
+            <h1>Nouveauté</h1>
+        </div>
+        
+
+    </div>
+
+    <div class ="midEnd">
+        <div class = "btsEnd">
+            <a class = "neon-button" href="/Sujet">
+                <samp><strong>Crée un topic!</strong></samp>
+            </a>
+
+            </a>
+        </div>
+    </div>
+
+    
+    <div class = "end">
+        <div class="title2">
+            <h2>Topic du moment !</h2>
+        </div>
+        <div class="flex-container">
+           
+            {{range .Posts}}
+            <div class="card">
+                <h3><u>Titre</u></h3>
+                <div class="flex-container">
+
+                
+                    
+                    <div class="container">
+                        
+                        <h4><b>Nom:<br>{{.Nom}}</b></h4>
+
+                        <p>Contenue : {{.Contenue}}</p>
+                        
+                    </div>
+                    
+
+                </div>
+                <button id= "bouton" type ="submit">Supprimer le post</button>
+            </div>
+            {{end}}
+
+            
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>

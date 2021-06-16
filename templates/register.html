@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F*cking H@cker!</title>
-    <link rel="stylesheet" href="styleRegister.css">
+    <title>L@zy H@cker!</title>
+    <link rel="stylesheet" href="/static/css/styleRegister.css">
     <link rel = "shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a1/Lazy_Hackers_logo.png">
 </head>
 <body>
@@ -26,7 +26,7 @@
                 <div class="container">
                     <div class = "formulaire">
                         <form action="/register" method="POST">
-                            <label>ID: </label>
+                            <label>Pseudo: </label>
                             <input type="text" id="username" name="username" required>
                     
                             <label>Email: </label>
@@ -38,7 +38,7 @@
                             <button type="submit">Create</button>
                         </form>
                     
-                        <!-- <p>{{ .Message }}</p> -->
+                        <p>{{ .Message }}</p>
                     
                     </div>
                 </div>
@@ -46,7 +46,7 @@
             </div>
 
             <div>
-                <a class="neon-button" href="login.html">
+                <a class="neon-button" href="/login">
                     <h3><strong>Déjà inscrit?</strong> </h3>
                 </a>
             </div>

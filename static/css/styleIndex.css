@@ -94,6 +94,7 @@ body{
 .neon-button:focus {
   color: var(--clr-bg);
   text-shadow: none;
+  background-color:  var(--clr-neon);
 }
 
 .neon-button:hover::before,
@@ -133,7 +134,7 @@ p{
 
 #mid{
   background-color: black;
-  background:url("MesImages/imageonline-gifspeed-5721685.gif") center/cover;
+  background:url("https://perruspe.sirv.com/Images/imageonline-gifspeed-5721685.gif") center/cover;
   height: 75vh ;
   background-size: 100% 100%;
   filter: brightness(0.5 );
@@ -238,3 +239,15 @@ p{
   .imagee{
   float:left;
   }
+
+
+/* index2 */
+.username {
+  font-family: 'Cinzel Decorative', cursive;
+  color:rgb(4, 206, 4)
+  
+}
+.brouton{
+  background-color: black
+}
+

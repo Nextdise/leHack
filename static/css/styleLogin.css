@@ -131,6 +131,7 @@ body{
       .neon-button:focus {
         color: var(--clr-bg);
         text-shadow: none;
+        background-color: var(--clr-neon);
       }
       
       .neon-button:hover::before,
